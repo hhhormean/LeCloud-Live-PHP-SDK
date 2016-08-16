@@ -246,7 +246,7 @@ $playMode = $this->default_args['playMode'];
 
 $args = compact('activityId', 'activityName', 'startTime', 'endTime', 'coverImgUrl', 'description', 'liveNum', 'codeRateTypes', 'needRecord', 'needTimeShift', 'needFullView', 'playMode');*/
 
-        $args = self::parse_args($args, $default_args);
+        $args = self::parse_args($args, $this->default_args);
 
         if (isset($args['activityCategory'])) {
             unset($args['activityCategory']);
